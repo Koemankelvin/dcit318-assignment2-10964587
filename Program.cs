@@ -22,6 +22,13 @@ namespace OOPDemo
 
             Shape rectangle = new Rectangle(4, 6);
             Console.WriteLine($"Rectangle Area: {rectangle.GetArea()}");
+
+            // Interfaces
+            IMovable car = new Car();
+            car.Move();
+
+            IMovable bicycle = new Bicycle();
+            bicycle.Move();
         }
     }
 }
